@@ -1,0 +1,27 @@
+{
+  "name": "cpsc349-project4",
+  "version": "1.0.0",
+  "description": "CPSC 349 - Fall 2022 - Project 4 - Group 22",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pocketbase": "./pocketbase serve",
+    "esbuild": "esbuild src/app.jsx --outfile=pb_public/app.js --watch",
+    "start": "npm-run-all --parallel esbuild pocketbase"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdo297/cpsc349-exercise4.git"
+  },
+  "author": "Group 22",
+  "license": "N/A",
+  "bugs": {
+    "url": "https://github.com/tdo297/cpsc349-exercise4/issues"
+  },
+  "dependencies": {
+    "esbuild": "0.15.18"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
